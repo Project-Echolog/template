@@ -1,0 +1,21 @@
+a.image-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 1.5rem;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+
+a.image-card:hover,
+a.image-card:focus {
+  transform: translateY(-0.5rem);
+}
+
+img.image-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

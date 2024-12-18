@@ -1,0 +1,54 @@
+/*! IMPORTS */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*! VARIABLES */
+:root {
+  --color-link: #006aff;
+  --color-button-primary: #005fff;
+  --color-button-secondary: #606060;
+  --color-wishlist: #40bcf4;
+  --color-like: #ff9010;
+  --color-review: #05a763;
+  --color-review-lighter: #00c965;
+  --color-success: #009048;
+  --color-warning: #ff5e00;
+  --color-error: #ff0000;
+}
+
+/*! BASE STYLINGS */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'SF Pro Display', 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #14181c;
+  margin: 0;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
