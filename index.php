@@ -25,7 +25,7 @@ ob_start();
   </div>
 </section>
 <div class="container">
-  <section class="popular-reviews mt-5">
+  <section class="popular-games mt-5">
     <p class="fs-2">Popular Games to Track</p>
     <div class="gallery">
       <?php
