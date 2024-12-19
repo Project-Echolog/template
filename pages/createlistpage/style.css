@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 header {
   width: 100%;
   height: 67px;
@@ -41,9 +47,9 @@ body {
 }
 
 .list-name-description {
-  gap: 118px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 22px;
 }
 
@@ -56,10 +62,11 @@ body {
   line-height: 29.83px;
 }
 
-.list-name > input {
+.list-name input {
   width: 449px;
   height: 52px;
   padding-left: 9px;
+  font-size: 1.5rem;
 }
 
 .description {
@@ -71,12 +78,13 @@ body {
   line-height: 29.83px;
 }
 
-.description > textarea {
+.description textarea {
   resize: none;
   width: 471px;
   height: 313px;
   padding-top: 14px;
   padding-left: 9px;
+  font-size: 1.5rem;
 }
 
 .game-name-buttons {
@@ -93,15 +101,17 @@ body {
   gap: 16px;
 }
 
-.game-name > input {
+.game-name input {
   width: 449px;
   height: 52px;
   padding-left: 9px;
+  font-size: 1.5rem;
 }
 
-.game-name > span {
+.game-name span {
   color: #819291;
   margin-left: 5px;
+  font-size: 1.5rem;
 }
 
 .buttons {
@@ -113,7 +123,7 @@ body {
   cursor: pointer;
 }
 
-.buttons > button {
+.buttons button {
   width: 107px;
   height: 43px;
   border-radius: 3px;
@@ -134,7 +144,7 @@ body {
 
 .add-game-list {
   border: 3px solid #66788a;
-  width: 1026px;
+  width: 100%;
   height: 363px;
   margin-top: 31px;
   display: flex;
