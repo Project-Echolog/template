@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="new-list">
+            <h1>New List</h1>
+            <hr class="custom-hr">
+            <form action="">
+                <div class="list-name-description">
+                    <label class="list-name">
+                        Name of the List
+                        <input type="text" id="list-name" placeholder="Enter Name">
+                    </label>
+
+                    <label class="description" for="description">
+                        Description
+                        <textarea name="description" id="description"
+                            placeholder="Write Description of your list"></textarea>
+                    </label>
+                </div>
+
+                <div class="game-name-buttons">
+                    <label class="game-name">
+                        <input type="text" id="game-name" placeholder="Enter Game Name" required>
+                        <span>*Enter game’s name correctly without shortening</span>
+                    </label>
+
+                    <div class="buttons">
+                        <button class="cancel-button" type="button">Cancel</button>
+                        <button class="save-button" type="submit">Save</button>
+                    </div>
+                </div>
+
+                <div class="add-game-list">
+                    <p class="list-empty-text">Your list is empty</p>
+                    <p class="add-games-text">Add games to your list by searching name</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

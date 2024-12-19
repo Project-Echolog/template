@@ -1,0 +1,157 @@
+header {
+  width: 100%;
+  height: 67px;
+  background-color: #050519;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #181c1c;
+}
+
+.custom-hr {
+  width: 1047px;
+  border: 1px solid #8c8a8a;
+}
+
+.new-list {
+  margin: 93px 183px 398px 59px;
+  width: 1047px;
+}
+
+.new-list > h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.28px;
+  margin: 0;
+}
+
+.new-list ::placeholder {
+  font-family: 'SF Pro Display', sans-serif;
+  color: #819291;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.87px;
+}
+
+.list-name-description {
+  gap: 118px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 22px;
+}
+
+.list-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.83px;
+}
+
+.list-name > input {
+  width: 449px;
+  height: 52px;
+  padding-left: 9px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.83px;
+}
+
+.description > textarea {
+  resize: none;
+  width: 471px;
+  height: 313px;
+  padding-top: 14px;
+  padding-left: 9px;
+}
+
+.game-name-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 104px;
+  gap: 354px;
+  justify-content: space-between;
+}
+
+.game-name {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.game-name > input {
+  width: 449px;
+  height: 52px;
+  padding-left: 9px;
+}
+
+.game-name > span {
+  color: #819291;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  border-radius: 3px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.buttons > button {
+  width: 107px;
+  height: 43px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #60606c;
+  color: #ffffff;
+  border: 1px solid #60606c;
+}
+
+.save-button {
+  background-color: #009048;
+  color: #ffffff;
+  border: 1px solid #009048;
+}
+
+.add-game-list {
+  border: 3px solid #66788a;
+  width: 1026px;
+  height: 363px;
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  line-height: 29.83px;
+  gap: 15px;
+}
+
+.list-empty-text {
+  margin: 0;
+  font-weight: 600;
+}
+
+.add-games-text {
+  margin: 0;
+  font-weight: 300;
+}
