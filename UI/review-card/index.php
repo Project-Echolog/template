@@ -1,7 +1,9 @@
 <?php
 if (!isset($additionalCSS)) $additionalCSS = [];
+if (!isset($additionalJS)) $additionalJS = [];
 array_push($additionalCSS, '/echolog-template/ui/review-card/style.css');
 array_push($additionalJS, '/echolog-template/ui/review-card/script.js');
+$_hide_like_button = $hide_like_button ?? false;
 ?>
 <div class="review-card mb-3">
   <div class="review-card__left">
@@ -18,18 +20,21 @@ array_push($additionalJS, '/echolog-template/ui/review-card/script.js');
       <span class="review-card__rating">Rating: <?php echo $rating ?? '4'; ?>/5</span>
     </p>
     <p class="review-card__text"><?php echo $text ?? '"KODJIMA IS GENIUS"'; ?></p>
-    <div class="review-card__like-info">
-      <a href="#" class="review-card__like-button">
-        <img
-          class="review-card__like-icon"
-          src="/echolog-template/assets/svgs/heart-outline.svg"
-          alt="Like Icon" />
-        <span class="review-card__like-count"><?php echo $like_count; ?></span>
-      </a>
-    </div>
+    <?php if ($_hide_like_button !== true) : ?>
+      <div class="review-card__like-info">
+        <a href="#" class="review-card__like-button">
+          <img
+            class="review-card__like-icon"
+            src="/echolog-template/assets/svgs/heart-outline.svg"
+            alt="Like Icon" />
+          <span class="review-card__like-count"><?php echo $like_count ?? '200'; ?></span>
+        </a>
+      </div>
+    <?php endif; ?>
   </div>
 </div>
 <?php
+$hide_like_button = false;
 $game_image = null;
 $game_title = null;
 $username = null;
