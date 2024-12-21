@@ -10,6 +10,11 @@
   transition: transform 0.2s;
 }
 
+.collection-card.alt {
+  flex-direction: row;
+  max-width: 100%;
+}
+
 .collection-card:hover,
 .collection-card:focus {
   transform: translateY(-0.5rem);
@@ -23,6 +28,10 @@ div.collection-card__image-frame {
   border-radius: 1.5rem;
   aspect-ratio: 3 / 2;
   margin-bottom: 0.4rem;
+}
+
+div.collection-card__image-frame.alt {
+  max-width: 300px;
 }
 
 img.collection-card__image {
