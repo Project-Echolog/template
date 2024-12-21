@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 .review-card {
   display: flex;
   flex-direction: row;
@@ -18,6 +22,12 @@
   height: 100%;
   border-radius: 1.5rem;
   object-fit: cover;
+}
+
+.review-card__game-image.alt {
+  border-radius: 50px;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 
 .review-card__right {
@@ -44,6 +54,14 @@ p.review-card__adjoining-info {
 
 span.review-card__rating {
   color: var(--color-review);
+}
+
+.review-card__rating-alt:not(.alt) {
+  /* display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center; */
+  display: none;
 }
 
 p.review-card__text {
