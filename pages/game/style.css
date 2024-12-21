@@ -1,0 +1,162 @@
+.banner-frame {
+  height: 70dvh;
+}
+
+img.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(0.6);
+}
+
+.container {
+  padding-top: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section.introduction {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.introduction__left {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0 2rem;
+  transform: translateY(-6rem);
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.introduction__tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+a.introduction__tool {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+img.introduction__tool-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.introduction__right {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  padding: 0 2rem;
+}
+
+.introduction__title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.introduction__developer {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  width: fit-content;
+  border-bottom: 1px solid #fff;
+  line-height: 1.2;
+}
+
+.introduction__description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 2rem 0;
+  line-height: 1.5;
+  color: #909090;
+}
+
+/* aside.genres h2.genres__title div.genres__list a.genres__item */
+aside.genres {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h2.genres__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.genres__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+}
+
+a.genres__item {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid var(--color-review-lighter);
+}
+
+aside.info-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+p.info {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+section.personal-review {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.personal-review__button {
+  margin: 0;
+  background-color: var(--color-review-lighter) !important;
+  border-radius: 1rem;
+  padding: 0.5rem 4rem !important;
+  font-size: 2.5rem !important;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
