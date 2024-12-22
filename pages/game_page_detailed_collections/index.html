@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page - Collections</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .content {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .tabs {
+            display: flex;
+            margin: 20px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #999;
+            text-decoration: none;
+        }
+
+        .tab.active {
+            color: #ffffff;
+            border-bottom: 2px solid #0078ff;
+        }
+
+        .collections {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .collection-item {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .collection-item img {
+            width: 80px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .collection-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .collection-title {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .collection-meta {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .collection-description {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .game-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination button {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pagination button:hover {
+            background-color: #0078ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Collections that include - Red Dead Redemption II</h1>
+            <div class="tabs">
+                <a href="/pages/game_page_detailed_liked_users/index.html" class="tab">LIKES</a>
+                <a href="/pages/game_page_detailed_wishlist_users/index.html" class="tab">WISHLIST</a>
+                <a href="/pages/game_page_detailed_reviews/index.html" class="tab">REVIEWS</a>
+                <a href="/pages/game_page_detailed_collections/index.html" class="tab active">COLLECTIONS</a>
+            </div>
+            <div class="collections" id="collections-container">
+            </div>
+            <div class="pagination">
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="game-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BZTM4YjFiMGEtZGFkYy00NjAwLWEwNjMtNWQwOWI5ZTAwMTgwXkEyXkFqcGc@._V1_.jpg" alt="Game cover">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const collections = [
+            { title: "Action FPS Collection", author: "Teodoro", items: "60 games", description: "Best FPS games.", image: "https://img.redbull.com/images/c_fill,g_auto,w_450,h_600/q_auto:low,f_auto/redbullcom/2019/02/14/5455aa48-c5fb-48e5-9d54-3d848c7c32a2/rainbow-six-sieges-operators-add-complexity-to-the-strategising" },
+            { title: "Best MOBA", author: "CAT_MORTY", items: "19 games", description: "Top MOBA games.", image: "https://interfaceingame.com/wp-content/uploads/league-of-legends/league-of-legends-cover-375x500.jpg" },
+            { title: "Legendary", author: "dbsam", items: "71 games", description: "Legendary games.", image: "https://store-images.s-microsoft.com/image/apps.7859.14506879174941978.138d3eab-0b06-443b-a252-c99592521394.33a348aa-892d-49b8-9ef2-6ff06c22cf96?q=90&w=256&h=384&mode=crop&format=jpg&background=%23FFFFFF" },
+            { title: "Story Games", author: "scott_loves98", items: "47 games", description: "Popular story games.", image: "https://media.rockstargames.com/rockstargames/img/global/news/upload/actual_1364906194.jpg" },
+            { title: "500 Days of Summer", author: "Valerie", items: "15 games", description: "Summer vibe games.", image: "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" },
+            { title: "Retro Classics", author: "OldGamer", items: "30 items", description: "Relive the golden age of gaming with these retro classics.", image: "https://www.codesproduit.fr/wp-content/uploads/2024/03/TEKKEN-7-PC-COVER.jpg" },
+            { title: "Indie Gems", author: "IndieFan", items: "25 items", description: "Discover hidden indie game treasures loved by fans worldwide.", image: "https://m.media-amazon.com/images/I/613Py5NEsSL.jpg" },
+        ];
+
+        const itemsPerPage = 5;
+        let currentPage = 0;
+
+        function loadCollections() {
+            const container = document.getElementById("collections-container");
+            container.innerHTML = ""; 
+            const start = currentPage * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageCollections = collections.slice(start, end);
+
+            pageCollections.forEach(collection => {
+                const collectionHTML = `
+                    <div class="collection-item">
+                        <img src="${collection.image}" alt="Collection">
+                        <div class="collection-info">
+                            <h3 class="collection-title">${collection.title}</h3>
+                            <p class="collection-meta">${collection.author} · ${collection.items}</p>
+                            <p class="collection-description">${collection.description}</p>
+                        </div>
+                    </div>`;
+                container.innerHTML += collectionHTML;
+            });
+        }
+
+        document.getElementById("next-button").addEventListener("click", () => {
+            currentPage = (currentPage + 1) % Math.ceil(collections.length / itemsPerPage);
+            loadCollections();
+        });
+        loadCollections();
+    </script>
+</body>
+</html>

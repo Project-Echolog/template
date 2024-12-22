@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page - Liked Users</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .content {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .tabs {
+            display: flex;
+            margin: 20px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #999;
+            text-decoration: none;
+        }
+
+        .tab.active {
+            color: #ffffff;
+            border-bottom: 2px solid #0078ff;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            
+        }
+
+        .table th, .table td {
+            padding: 10px;
+            text-align: left;
+            
+        }
+
+        .table th {
+            background-color: #282828;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .game-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Users who liked Red Dead Redemption II</h1>
+            <div class="tabs">
+                <a href="/pages/game_page_detailed_liked_users/index.html" class="tab active">LIKES</a>
+                <a href="/pages/game_page_detailed_wishlist_users/index.html" class="tab">WISHLIST</a>
+                <a href="/pages/game_page_detailed_reviews/index.html" class="tab">REVIEWS</a>
+                <a href="/pages/game_page_detailed_collections/index.html" class="tab">COLLECTIONS</a>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Likes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="user-info">
+                            <img src="/assets/images/profile-photo.png" alt="User avatar">
+                            Ricky
+                        </td>
+                        <td>4/5</td>
+                        <td style="color:red"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                          </svg></td>
+                    </tr>
+                    <tr>
+                        <td class="user-info">
+                            <img src="/assets/images/profile-photo.png" alt="User avatar">
+                            Deacon
+                        </td>
+                        <td>5/5</td>
+                        <td style="color:red"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                          </svg></td>
+                    </tr>
+                    <tr>
+                        <td class="user-info">
+                            <img src="/assets/images/profile-photo.png" alt="User avatar">
+                            Joel
+                        </td>
+                        <td>2/5</td>
+                        <td style="color:red"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                          </svg></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="sidebar">
+            <div class="game-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BZTM4YjFiMGEtZGFkYy00NjAwLWEwNjMtNWQwOWI5ZTAwMTgwXkEyXkFqcGc@._V1_.jpg" alt="Game cover">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
