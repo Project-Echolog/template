@@ -102,6 +102,32 @@ ob_start();
     include '../../ui/image-card/index.php';
     ?>
   </section>
+  <h3 class="m-0">Other collections by <span>Deacon</span></h3>
+  <hr color="#8a8a8a" class="mt-1" />
+  <div class="other-collections">
+    <?php
+    $title = 'for when you want to feel something';
+    $username = 'bel';
+    $like_count = 198375;
+    $comment_count = 1236;
+    include '../../ui/collection-card/index.php';
+    ?>
+    <?php
+    $title = 'Games everyone should play at least once during their lifetime';
+    $username = 'fcbarcelona';
+    $like_count = 164824;
+    $comment_count = 1024;
+    include '../../ui/collection-card/index.php';
+    ?>
+    <?php
+    $title = 'Official top 250 games of all time';
+    $username = 'Dave Vis';
+    $like_count = 123456;
+    $comment_count = 987;
+    include '../../ui/collection-card/index.php';
+    ?>
+  </div>
+  </section>
 </div>
 <?php
 $content = ob_get_clean();
