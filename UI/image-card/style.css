@@ -14,6 +14,10 @@ a.image-card:focus {
   transform: translateY(-0.5rem);
 }
 
+a.image-card--hidden {
+  display: none;
+}
+
 img.image-card__image {
   width: 100%;
   height: 100%;
