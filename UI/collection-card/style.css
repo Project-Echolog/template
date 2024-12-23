@@ -20,6 +20,10 @@
   transform: translateY(-0.5rem);
 }
 
+a.collection-card--hidden {
+  display: none;
+}
+
 div.collection-card__image-frame {
   position: relative;
   width: 100%;
