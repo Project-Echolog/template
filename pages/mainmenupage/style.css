@@ -13,6 +13,14 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #181c1c;
+  font-size: 25px;
+  line-height: 29.83px;
+}
+
+h3,
+p,
+hr {
+  margin: 0;
 }
 
 .search-bar {
@@ -34,21 +42,30 @@ body {
   color: #d9d9d9;
 }
 
-.carousel {
+.must-have-games h3,
+.new-releases h3 {
+  margin-left: 72px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.carousel,
+.coursel-two {
   display: flex;
+  flex-direction: row;
   align-items: center;
   overflow: hidden;
-  flex-direction: row;
   width: 80%;
   position: relative;
   margin-top: 18px;
-  margin-left: 72px;
 }
 
 .carousel-items {
   display: flex;
+  margin-left: 72px;
   gap: 15px;
   transition: transform 0.3s ease;
+  scroll-behavior: smooth;
 }
 
 .card {
@@ -59,16 +76,15 @@ body {
   flex: 0 0 auto;
   background: #333;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.card:hover {
-  border: 4px solid #00c965;
+.card:hover,
+.card-popular:hover {
+  border: 2px solid #00c965;
 }
 
-.card img {
+.card img,
+.card-popular img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -81,13 +97,140 @@ button {
   border: none;
 }
 
-button.prev {
+button.prev-button {
   position: absolute;
-  width: 5.91px;
-  height: 10px;
+  display: flex;
+  padding-left: 56px;
 }
 
-button.next {
+button.next-button {
   position: absolute;
-  right: 10px;
+  padding-left: 1176px;
+}
+
+.popular-games h3 {
+  margin-left: 72px;
+  padding-top: 47px;
+  padding-bottom: 13px;
+}
+
+.carousel-two-items {
+  display: flex;
+  margin-left: 87px;
+  gap: 19px;
+  transition: transform 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+.card-popular {
+  width: 158px;
+  height: 210px;
+  border-radius: 13px;
+  border: 0.35px;
+  flex: 0 0 auto;
+  background: #333;
+  overflow: hidden;
+}
+
+button.prev-two {
+  position: absolute;
+  display: flex;
+  padding-left: 65px;
+}
+
+button.next-two {
+  position: absolute;
+  display: flex;
+  padding-left: 1130px;
+}
+
+.reviews {
+  margin: 100px 488px 307px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.reviews-container {
+  width: 702px;
+  height: 581px;
+}
+
+.reviews-list {
+  width: 702px;
+  height: 544px;
+  gap: 33px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.reviews-item {
+  width: 702px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: #3b3b48;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.reviews-item img {
+  padding: 9px;
+}
+
+.game-title {
+  padding-top: 14px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  color: #c1c1c1;
+  width: 420px;
+}
+
+.rating {
+  color: #00c965de;
+}
+
+hr {
+  width: 0px;
+  height: 15px;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.add-fav-button {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.add-fav-button svg {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+
+.add-fav-button p {
+  position: absolute;
+  top: 130px;
+  left: 125px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
 }
