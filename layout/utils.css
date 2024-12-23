@@ -3,8 +3,16 @@
   color: #fff !important;
 }
 
+.white-bg {
+  background-color: #fff !important;
+}
+
 .gray {
   color: #909090 !important;
+}
+
+.gray-bg {
+  background-color: #909090 !important;
 }
 
 .review-lighter {
@@ -278,4 +286,20 @@
 /*! MISCELLANEOUS */
 .text-center {
   text-align: center !important;
+}
+
+.border-radius-0-5 {
+  border-radius: 0.5rem !important;
+}
+
+.border-radius-1 {
+  border-radius: 1rem !important;
+}
+
+.border-radius-2 {
+  border-radius: 2rem !important;
+}
+
+.border-radius-3 {
+  border-radius: 3rem !important;
 }
