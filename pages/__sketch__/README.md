@@ -1,6 +1,6 @@
 # Credits
 
-Arda Öztürk:
+## Arda Öztürk
 
 GitHub: [arda03ozturk](https://github.com/arda03ozturk)
 
