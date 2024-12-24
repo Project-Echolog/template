@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review - Red Dead Redemption II</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .popup {
+            background-color: #2a3b4d;
+            width: 600px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .popup-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .popup-header button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-grow: 1;
+            gap: 20px;
+        }
+
+        .game-image {
+            flex: 1;
+            max-width: 150px;
+        }
+
+        .game-image img {
+            width: 100%;
+        }
+
+        .review-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px; 
+            margin-bottom: 145px;
+        }
+
+        .textarea {
+            font-family: inherit;
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            color: #000;
+            background-color: #ffffff;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 15px 0;
+        }
+
+        .rating span {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .rating svg {
+        width: 24px;
+        height: 24px;
+        fill: #999; 
+        stroke: none; 
+        cursor: pointer;
+        }
+
+        .rating svg.selected {
+         fill: #ffcc00; 
+        }
+
+
+        .save-button {
+            align-self: flex-end;
+            width: auto;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+
+        .save-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup-header">
+            <h2>Red Dead Redemption II</h2>
+            <button>&times;</button>
+        </div>
+        <div class="content">
+            <div class="game-image">
+                <img src="https://m.media-amazon.com/images/M/MV5BZTM4YjFiMGEtZGFkYy00NjAwLWEwNjMtNWQwOWI5ZTAwMTgwXkEyXkFqcGc@._V1_.jpg" alt="Days Gone">
+            </div>
+            <div class="review-section">
+                <textarea class="textarea" placeholder="Edit Review"></textarea>
+                <div class="rating">
+                    <span>Rating:</span>
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star">
+                        <path d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.174L12 18.896l-7.334 3.868 1.4-8.174L.132 9.209l8.2-1.191z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star">
+                        <path d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.174L12 18.896l-7.334 3.868 1.4-8.174L.132 9.209l8.2-1.191z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star">
+                        <path d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.174L12 18.896l-7.334 3.868 1.4-8.174L.132 9.209l8.2-1.191z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star">
+                        <path d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.174L12 18.896l-7.334 3.868 1.4-8.174L.132 9.209l8.2-1.191z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star">
+                        <path d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.174L12 18.896l-7.334 3.868 1.4-8.174L.132 9.209l8.2-1.191z"/>
+                      </svg>
+                      
+                </div>
+                <button class="save-button">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.rating .star');
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            stars.forEach((s, i) => {
+                if (i <= index) {
+                    s.classList.add('selected');
+                } else {
+                    s.classList.remove('selected');
+                }
+            });
+            console.log(`You selected ${index + 1} star(s)`);
+        });
+    });
+});
+    </script>
+</body>
+</html>

@@ -58,17 +58,22 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            
         }
 
         .table th, .table td {
-            padding: 10px;
-            text-align: left;
-            
+            padding: 12px;
+            font-size: 14px;
+            text-align: center; /* Center-align Rating and Likes columns */
         }
 
         .table th {
             background-color: #282828;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .table td {
+            font-size: 14px;
         }
 
         .user-info {
@@ -81,6 +86,13 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
+        }
+
+        .table td svg {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            display: inline-block;
         }
 
         .game-image img {
@@ -106,7 +118,7 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th style="text-align: left;">Name</th>
                         <th>Rating</th>
                         <th>Likes</th>
                     </tr>
