@@ -60,27 +60,24 @@ h1 {
 }
 
 .filters {
-  /* Arka plan rengi */
-  padding-left: 11px; /* İçerik boşluğu */
-  border-radius: 8px; /* Köşe yuvarlama */
-  color: #fff; /* Yazı rengi */
-  width: 291px; /* Genişlik */
+  padding-left: 11px;
+  border-radius: 8px;
+  color: #fff;
+  width: 291px;
 }
 
 /* Liste stili */
 .filter-list {
   background-color: #141218;
-  list-style: none; /* Madde işaretlerini kaldır */
+  list-style: none;
   padding: 8px 28px 8px 18px;
   margin: 0;
 }
 
-/* Liste öğeleri */
 .filter-list li {
-  margin-bottom: 24px; /* Öğeler arasına boşluk */
+  margin-bottom: 24px;
 }
 
-/* Checkbox ve metni yan yana yerleştirme */
 .filter-list label {
   display: flex;
   justify-content: space-between;
