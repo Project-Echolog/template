@@ -1,0 +1,83 @@
+.container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90dvh;
+}
+
+.popup {
+  background-image: linear-gradient(180deg, #232526, #232526, #343434);
+  border-radius: 10px;
+  border: 2px solid #303033;
+  padding: 80px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  color: #ffffff;
+  margin: 40px 0;
+}
+
+.popup h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.popup input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #353539;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.popup button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0078ff;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.popup button:hover {
+  background-color: #005fcc;
+}
+
+.popup a {
+  color: #0078ff;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.popup a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  height: 1px;
+  background-color: #444444;
+  margin: 20px 0;
+  border: none;
+}
+
+.success-message {
+  color: #005fcc;
+  font-size: 14px;
+  margin-top: 15px;
+  display: none;
+}
+
+/*! patch for login and register pages */
+footer.footer {
+  margin-top: 0 !important;
+}
