@@ -1,0 +1,118 @@
+.outer-container {
+  margin: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.content {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.tabs {
+  display: flex;
+  margin: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #999;
+  text-decoration: none;
+}
+
+.tab.active {
+  color: #ffffff;
+  border-bottom: 2px solid #0078ff;
+}
+
+.collections {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.collection-item {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.collection-item img {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.collection-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collection-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.collection-meta {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.collection-description {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.game-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+a {
+  color: inherit;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0078ff;
+}
