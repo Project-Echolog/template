@@ -49,8 +49,7 @@ hr {
   padding-bottom: 18px;
 }
 
-.carousel,
-.coursel-two {
+.carousel {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,6 +65,7 @@ hr {
   gap: 15px;
   transition: transform 0.3s ease;
   scroll-behavior: smooth;
+  will-change: transform;
 }
 
 .card {
@@ -76,6 +76,12 @@ hr {
   flex: 0 0 auto;
   background: #333;
   overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card.hidden {
+  opacity: 0;
 }
 
 .card:hover,
@@ -95,6 +101,7 @@ button {
   color: #ffffff;
   background-color: transparent;
   border: none;
+  transition: transform 0.3s ease;
 }
 
 button.prev-button {
@@ -106,6 +113,16 @@ button.prev-button {
 button.next-button {
   position: absolute;
   padding-left: 1176px;
+}
+
+.coursel-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+  margin-top: 18px;
 }
 
 .popular-games h3 {
@@ -132,16 +149,17 @@ button.next-button {
   overflow: hidden;
 }
 
-button.prev-two {
+button.prev-button-one {
   position: absolute;
   display: flex;
-  padding-left: 65px;
+  padding-left: 70px;
+  top: 730px;
 }
 
-button.next-two {
+button.next-button-one {
   position: absolute;
-  display: flex;
-  padding-left: 1130px;
+  padding-left: 1140px;
+  top: 730px;
 }
 
 .reviews {
@@ -177,6 +195,19 @@ button.next-two {
 
 .reviews-item img {
   padding: 9px;
+}
+
+button.prev-button-two {
+  position: absolute;
+  display: flex;
+  padding-left: 70px;
+  top: 1000px;
+}
+
+button.next-button-two {
+  position: absolute;
+  padding-left: 1140px;
+  top: 1000px;
 }
 
 .game-title {

@@ -187,6 +187,7 @@ hr {
 .trash-button {
   background-color: #14181c;
   border: 0px;
+  cursor: pointer;
 }
 
 .search-container {
