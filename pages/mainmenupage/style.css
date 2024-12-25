@@ -47,6 +47,7 @@ hr {
   margin-left: 72px;
   padding-top: 15px;
   padding-bottom: 18px;
+  margin: 0, 87px;
 }
 
 .carousel {
@@ -54,29 +55,26 @@ hr {
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-  width: 80%;
+  /* padding: 0px 87px; */
+  width: 100%;
   position: relative;
   margin-top: 18px;
 }
 
 .carousel-items {
   display: flex;
-  margin-left: 72px;
-  gap: 15px;
-  transition: transform 0.3s ease;
-  scroll-behavior: smooth;
-  will-change: transform;
 }
 
 .card {
   width: 207px;
   height: 276px;
+  width: auto;
   border-radius: 13px;
-  border: 0.35px;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   background: #333;
   overflow: hidden;
   opacity: 1;
+  border: 2px solid transparent;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -102,25 +100,47 @@ button {
   background-color: transparent;
   border: none;
   transition: transform 0.3s ease;
+  transition-duration: 0.3s;
+  border-radius: 99px;
 }
 
 button.prev-button {
   position: absolute;
   display: flex;
-  padding-left: 56px;
+  left: 56px;
+  z-index: 20;
+  padding: 18px;
 }
 
 button.next-button {
   position: absolute;
-  padding-left: 1176px;
+  right: 56px;
+  z-index: 20;
+  padding: 18px;
 }
 
-.coursel-two {
+button:hover {
+  background: #33333389;
+}
+
+.carousel-two {
   display: flex;
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-  width: 80%;
+  /* padding: 0px 87px; */
+  width: 100%;
+  position: relative;
+  margin-top: 18px;
+}
+
+.carousel-third {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  /* padding: 0px 87px; */
+  width: 100%;
   position: relative;
   margin-top: 18px;
 }
@@ -131,22 +151,25 @@ button.next-button {
   padding-bottom: 13px;
 }
 
-.carousel-two-items {
+.swiper-items-two {
   display: flex;
-  margin-left: 87px;
-  gap: 19px;
-  transition: transform 0.3s ease;
-  scroll-behavior: smooth;
+}
+
+.swiper-items-third {
+  display: flex;
 }
 
 .card-popular {
-  width: 158px;
-  height: 210px;
+  width: 207px;
+  height: 276px;
+  width: auto;
   border-radius: 13px;
-  border: 0.35px;
   flex: 0 0 auto;
   background: #333;
   overflow: hidden;
+  opacity: 1;
+  border: 2px solid transparent;
+  transition: opacity 0.3s ease-in-out;
 }
 
 button.prev-button-one {
@@ -200,8 +223,10 @@ button.next-button-one {
 button.prev-button-two {
   position: absolute;
   display: flex;
-  padding-left: 70px;
-  top: 1000px;
+  left: 56px;
+  top: 50%;
+  z-index: 20;
+  padding: 18px;
 }
 
 button.next-button-two {
