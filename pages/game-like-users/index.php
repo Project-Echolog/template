@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Game Page - Like Users';
+$pageTitle = 'Users who liked Red Dead Redemption II';
 $additionalCSS = ['/echolog-template/pages/game-like-users/style.css'];
 define('ROOTPATH', __DIR__);
 

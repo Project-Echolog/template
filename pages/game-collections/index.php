@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Game Page - Collections';
+$pageTitle = 'Collections that include - Red Dead Redemption II';
 $additionalCSS = ['/echolog-template/pages/game-collections/style.css'];
 $additionalJS = ['/echolog-template/pages/game-collections/script.js'];
 define('ROOTPATH', __DIR__);

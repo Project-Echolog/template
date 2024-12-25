@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Games';
+$pageTitle = 'Profile';
 $additionalCSS = ['/echolog-template/pages/profile/style.css'];
 define('ROOTPATH', __DIR__);
 

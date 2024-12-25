@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Edit Game to Collection';
+$pageTitle = 'Edit Review for Red Dead Redemption II';
 $additionalCSS = ['/echolog-template/pages/review-edit/style.css'];
 $additionalJS = ['/echolog-template/pages/review-edit/script.js'];
 define('ROOTPATH', __DIR__);

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Collections';
+$pageTitle = 'Browse Collections';
 $additionalCSS = ['/echolog-template/pages/collections-browse/style.css'];
 $additionalJS = ['/echolog-template/pages/collections-browse/script.js'];
 define('ROOTPATH', __DIR__);

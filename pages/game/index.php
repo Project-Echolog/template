@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Games';
+$pageTitle = 'Game - Days Gone';
 $additionalCSS = ['/echolog-template/pages/game/style.css'];
 $additionalJS = ['/echolog-template/pages/game/script.js'];
 define('ROOTPATH', __DIR__);
