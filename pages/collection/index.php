@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Collection';
+$pageTitle = 'Collection - Games where main character is "literally me"';
 $additionalCSS = ['/echolog-template/pages/collection/style.css'];
 $additionalJS = ['/echolog-template/pages/collection/script.js'];
 define('ROOTPATH', __DIR__);

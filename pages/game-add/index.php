@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Add Game to Collection';
+$pageTitle = 'Add "Red Dead Redemption II" to Collection';
 $additionalCSS = ['/echolog-template/pages/game-add/style.css'];
 define('ROOTPATH', __DIR__);
 

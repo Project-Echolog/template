@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Sign In';
+$pageTitle = 'Sign Up';
 $additionalCSS = ['/echolog-template/pages/register/style.css'];
 define('ROOTPATH', __DIR__);
 

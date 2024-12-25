@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Game Detail - Red Dead Redemption II';
+$pageTitle = 'Reviews of Red Dead Redemption II';
 $additionalCSS = ['/echolog-template/pages/game-reviews/style.css'];
 define('ROOTPATH', __DIR__);
 

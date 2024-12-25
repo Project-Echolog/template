@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Game Page - Wishlisted Users';
+$pageTitle = 'Users who wishlisted Red Dead Redemption II';
 $additionalCSS = ['/echolog-template/pages/game-wishlist-users/style.css'];
 define('ROOTPATH', __DIR__);
 
