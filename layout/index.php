@@ -30,14 +30,14 @@
       <?php
       $pageTitle = $pageTitle ?? '';
       $menuItems = [
-        'Games' => 'games.php',
-        'Collections' => 'collections.php',
-        'Profile' => 'profile.php',
+        'Games' => 'games',
+        'Collections' => 'collections',
+        'Profile' => 'profile',
       ];
 
       foreach ($menuItems as $title => $link) {
         $activeClass = ($pageTitle === $title) ? 'active' : '';
-        echo "<a class='header__nav-link $activeClass' href='$link'>$title</a>";
+        echo "<a class='header__nav-link $activeClass' href='/echolog-template/pages/$link'>$title</a>";
       }
       ?>
     </nav>
