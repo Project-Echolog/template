@@ -12,7 +12,7 @@ ob_start();
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit">Continue</button>
     <hr class="divider">
-    <a href="/echolog-template/pages/register_page/index.html">Create Account</a>
+    <a href="/echolog-template/pages/register">Create Account</a>
   </form>
 </div>
 <?php
