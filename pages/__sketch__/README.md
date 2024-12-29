@@ -15,3 +15,16 @@ Created pages:
 - game_page_detailed_wishlist_users
 - login_page
 - register_page
+
+## Tuana Albayrak
+
+GitHub: [for-tuana](https://github.com/for-tuana)
+
+Created pages:
+
+- 404-page-one
+- 404-page-two
+- allgameslistpage
+- createlistpage
+- editlistpage
+- mainmenupage
