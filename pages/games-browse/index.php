@@ -75,82 +75,82 @@ ob_start();
         <div class="carousel-two">
           <div class="carousel-two-items">
             <div class="card-popular">
-              <img src="./images/detroit.png" alt="Detroit">
+              <img src="/echolog-template/assets/images/detroit.png" alt="Detroit">
             </div>
             <div class="card-popular">
-              <img src="./images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
+              <img src="/echolog-template/assets/images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
             </div>
             <div class="card-popular">
-              <img src="./images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
+              <img src="/echolog-template/assets/images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
             </div>
             <div class="card-popular">
-              <img src="./images/the-last-of-us.png" alt="The Last Of Us">
+              <img src="/echolog-template/assets/images/the-last-of-us.png" alt="The Last Of Us">
             </div>
             <div class="card-popular">
-              <img src="./images/the-evil-within.png" alt="The Evil Within">
+              <img src="/echolog-template/assets/images/the-evil-within.png" alt="The Evil Within">
             </div>
             <div class="card-popular">
-              <img src="./images/uncharted-four.png" alt="Uncharted Four">
-            </div>
-          </div>
-          <div class="carousel-two-items">
-            <div class="card-popular">
-              <img src="./images/detroit.png" alt="Detroit">
-            </div>
-            <div class="card-popular">
-              <img src="./images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
-            </div>
-            <div class="card-popular">
-              <img src="./images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
-            </div>
-            <div class="card-popular">
-              <img src="./images/the-last-of-us.png" alt="The Last Of Us">
-            </div>
-            <div class="card-popular">
-              <img src="./images/the-evil-within.png" alt="The Evil Within">
-            </div>
-            <div class="card-popular">
-              <img src="./images/uncharted-four.png" alt="Uncharted Four">
+              <img src="/echolog-template/assets/images/uncharted-four.png" alt="Uncharted Four">
             </div>
           </div>
           <div class="carousel-two-items">
             <div class="card-popular">
-              <img src="./images/detroit.png" alt="Detroit">
+              <img src="/echolog-template/assets/images/detroit.png" alt="Detroit">
             </div>
             <div class="card-popular">
-              <img src="./images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
+              <img src="/echolog-template/assets/images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
             </div>
             <div class="card-popular">
-              <img src="./images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
+              <img src="/echolog-template/assets/images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
             </div>
             <div class="card-popular">
-              <img src="./images/the-last-of-us.png" alt="The Last Of Us">
+              <img src="/echolog-template/assets/images/the-last-of-us.png" alt="The Last Of Us">
             </div>
             <div class="card-popular">
-              <img src="./images/the-evil-within.png" alt="The Evil Within">
+              <img src="/echolog-template/assets/images/the-evil-within.png" alt="The Evil Within">
             </div>
             <div class="card-popular">
-              <img src="./images/uncharted-four.png" alt="Uncharted Four">
+              <img src="/echolog-template/assets/images/uncharted-four.png" alt="Uncharted Four">
             </div>
           </div>
           <div class="carousel-two-items">
             <div class="card-popular">
-              <img src="./images/detroit.png" alt="Detroit">
+              <img src="/echolog-template/assets/images/detroit.png" alt="Detroit">
             </div>
             <div class="card-popular">
-              <img src="./images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
+              <img src="/echolog-template/assets/images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
             </div>
             <div class="card-popular">
-              <img src="./images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
+              <img src="/echolog-template/assets/images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
             </div>
             <div class="card-popular">
-              <img src="./images/the-last-of-us.png" alt="The Last Of Us">
+              <img src="/echolog-template/assets/images/the-last-of-us.png" alt="The Last Of Us">
             </div>
             <div class="card-popular">
-              <img src="./images/the-evil-within.png" alt="The Evil Within">
+              <img src="/echolog-template/assets/images/the-evil-within.png" alt="The Evil Within">
             </div>
             <div class="card-popular">
-              <img src="./images/uncharted-four.png" alt="Uncharted Four">
+              <img src="/echolog-template/assets/images/uncharted-four.png" alt="Uncharted Four">
+            </div>
+          </div>
+          <div class="carousel-two-items">
+            <div class="card-popular">
+              <img src="/echolog-template/assets/images/detroit.png" alt="Detroit">
+            </div>
+            <div class="card-popular">
+              <img src="/echolog-template/assets/images/metal-gear-solid-two.png" alt="Metal Gear Solid Two">
+            </div>
+            <div class="card-popular">
+              <img src="/echolog-template/assets/images//metal-gear-solid-three.png" alt="Metal Gaer Solid Three">
+            </div>
+            <div class="card-popular">
+              <img src="/echolog-template/assets/images/the-last-of-us.png" alt="The Last Of Us">
+            </div>
+            <div class="card-popular">
+              <img src="/echolog-template/assets/images/the-evil-within.png" alt="The Evil Within">
+            </div>
+            <div class="card-popular">
+              <img src="/echolog-template/assets/images/uncharted-four.png" alt="Uncharted Four">
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ ob_start();
       <div class="add-game-list-container">
         <ul class="game-list">
           <li class="game">
-            <img src="./images/detroit-new-list.png" alt="Detroit">
+            <img src="/echolog-template/assets/images/detroit-new-list.png" alt="Detroit">
             <button class="trash-button">
               <svg width="10" height="13" class="trash-icon">
                 <use href="./icon.svg#trash-icon"></use>
@@ -60,7 +60,7 @@ ob_start();
             </button>
           </li>
           <li class="game">
-            <img src="./images/metal-gear-solid-two-new-list.png" alt="Metal Gear Solid Two">
+            <img src="/echolog-template/assets/images/metal-gear-solid-two-new-list.png" alt="Metal Gear Solid Two">
             <button class="trash-button">
               <svg width="10" height="13" class="trash-icon">
                 <use href="./icon.svg#trash-icon"></use>
@@ -68,7 +68,7 @@ ob_start();
             </button>
           </li>
           <li class="game">
-            <img src="./images/metal-gear-solid-three-new-list.png" alt="Metal Gear Solid Three">
+            <img src="/echolog-template/assets/images/metal-gear-solid-three-new-list.png" alt="Metal Gear Solid Three">
             <button class="trash-button">
               <svg width="10" height="13" class="trash-icon">
                 <use href="./icon.svg#trash-icon"></use>
@@ -76,7 +76,7 @@ ob_start();
             </button>
           </li>
           <li class="game">
-            <img src="./images/the-evil-within-new-list.png" alt="The Evil Within">
+            <img src="/echolog-template/assets/images/the-evil-within-new-list.png" alt="The Evil Within">
             <button class="trash-button">
               <svg width="10" height="13" class="trash-icon">
                 <use href="./icon.svg#trash-icon"></use>
@@ -84,7 +84,7 @@ ob_start();
             </button>
           </li>
           <li class="game">
-            <img src="./images/uncharted-four-new-list.png" alt="Uncharted Four">
+            <img src="/echolog-template/assets/images/uncharted-four-new-list.png" alt="Uncharted Four">
             <button class="trash-button">
               <svg width="10" height="13" class="trash-icon">
                 <use href="./icon.svg#trash-icon"></use>
