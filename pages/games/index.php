@@ -413,7 +413,6 @@
         </ul>
       </div>
     </section>
-    <div class="pt-1"></div>
   </main>
 
   <script type="module">
@@ -539,9 +538,9 @@
       });
   </script>
 
-  <!-- <footer class="footer mt-5">
+  <footer class="footer mt-5">
     <p class="footer__text">&copy; 2024 Echolog. All rights reserved.</p>
-  </footer> -->
+  </footer>
 </body>
 
 </html>
