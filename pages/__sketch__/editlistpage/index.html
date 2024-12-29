@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="new-list">
+            <h1>New List</h1>
+            <hr class="custom-hr">
+            <form action="">
+                <div class="list-name-description">
+                    <label class="list-name">
+                        Name of the List
+                        <input type="text" id="list-name" placeholder="Enter Name">
+                    </label>
+
+                    <label class="description" for="description">
+                        Description
+                        <textarea name="description" id="description"
+                            placeholder="Write Description of your list"></textarea>
+                    </label>
+                </div>
+
+                <div class="game-name-buttons">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Enter Game Name" class="search-input" />
+                        <span class="short-title">*Enter game’s name correctly without shortyfing</span>
+                        <ul class="dropdown" id="dropdown">
+                            <li class="first-child">Metal Gear Solid</li>
+                            <li>Metal Gear Solid 2: Sons of Liberty</li>
+                            <hr>
+                            <li>Detroit: Become Human</li>
+                            <hr>
+                            <li>Horizon Zero Dawn</li>
+                            <hr>
+                            <li>Red Dead Redemption 2</li>
+                        </ul>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="cancel-button" type="button">Cancel</button>
+                        <button class="save-button" type="submit">Save</button>
+                    </div>
+                </div>
+
+                <div class="add-game-list">
+                    <p class="list-empty-text">Your list is empty</p>
+                    <p class="add-games-text">Add games to your list by searching name</p>
+
+                    <div class="add-game-list-container">
+                        <ul class="game-list">
+                            <li class="game">
+                                <img src="../images/detroit-new-list.png" alt="Detroit">
+                                <button class="trash-button">
+                                    <svg width="10" height="13" class="trash-icon">
+                                        <use href="./icon.svg#trash-icon"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="game">
+                                <img src="../images/metal-gear-solid-two-new-list.png" alt="Metal Gear Solid Two">
+                                <button class="trash-button">
+                                    <svg width="10" height="13" class="trash-icon">
+                                        <use href="./icon.svg#trash-icon"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="game">
+                                <img src="../images/metal-gear-solid-three-new-list.png" alt="Metal Gear Solid Three">
+                                <button class="trash-button">
+                                    <svg width="10" height="13" class="trash-icon">
+                                        <use href="./icon.svg#trash-icon"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="game">
+                                <img src="../images/the-evil-within-new-list.png" alt="The Evil Within">
+                                <button class="trash-button">
+                                    <svg width="10" height="13" class="trash-icon">
+                                        <use href="./icon.svg#trash-icon"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="game">
+                                <img src="../images/uncharted-four-new-list.png" alt="Uncharted Four">
+                                <button class="trash-button">
+                                    <svg width="10" height="13" class="trash-icon">
+                                        <use href="./icon.svg#trash-icon"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("search-input");
+            const dropdown = document.getElementById("dropdown");
+            const dropdownItems = dropdown.getElementsByTagName("li");
+
+            // Input alanı odaklandığında dropdown'ı göster
+            searchInput.addEventListener("focus", () => {
+                dropdown.style.display = "block";
+            });
+
+            // Input alanına girilen değere göre filtreleme
+            searchInput.addEventListener("input", () => {
+                const filter = searchInput.value.toLowerCase().trim();
+
+                Array.from(dropdownItems).forEach((item) => {
+                    if (item.textContent.toLowerCase().includes(filter)) {
+                        item.style.display = "block"; // Eşleşenleri göster
+                    } else {
+                        item.style.display = "none"; // Eşleşmeyenleri gizle
+                    }
+                });
+            });
+
+            // Input alanı odaktan çıktığında dropdown'ı gizle (isteğe bağlı)
+            searchInput.addEventListener("blur", () => {
+                setTimeout(() => {
+                    dropdown.style.display = "none";
+                }, 200); // Tıklanma durumunda gizleme gecikmesi
+            });
+
+            // Dropdown öğesine tıklandığında input alanını doldur
+            Array.from(dropdownItems).forEach((item) => {
+                item.addEventListener("click", () => {
+                    searchInput.value = item.textContent;
+                    dropdown.style.display = "none";
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+header {
+  width: 100%;
+  height: 67px;
+  background-color: #050519;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #181c1c;
+  font-size: 25px;
+  line-height: 29.83px;
+}
+
+h3,
+p,
+hr {
+  margin: 0;
+}
+
+.search-bar {
+  margin-top: 57px;
+  margin-left: 68px;
+}
+
+.search-bar > input {
+  width: 360px;
+  height: 52px;
+  border-radius: 3px;
+  background-color: #555555;
+  font-size: 20px;
+  line-height: 23.87px;
+  border: 3px solid #555555;
+}
+
+.search-bar ::placeholder {
+  color: #d9d9d9;
+}
+
+.must-have-games h3,
+.new-releases h3 {
+  margin-left: 72px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  margin: 0, 87px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  /* padding: 0px 87px; */
+  width: 100%;
+  position: relative;
+  margin-top: 18px;
+}
+
+.carousel-items {
+  display: flex;
+}
+
+.card {
+  width: 207px;
+  height: 276px;
+  width: auto;
+  border-radius: 13px;
+  /* flex: 0 0 auto; */
+  background: #333;
+  overflow: hidden;
+  opacity: 1;
+  border: 2px solid transparent;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card.hidden {
+  opacity: 0;
+}
+
+.card:hover,
+.card-popular:hover {
+  border: 2px solid #00c965;
+}
+
+.card img,
+.card-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease;
+  transition-duration: 0.3s;
+  border-radius: 99px;
+}
+
+button.prev-button {
+  position: absolute;
+  display: flex;
+  left: 56px;
+  z-index: 20;
+  padding: 18px;
+}
+
+button.next-button {
+  position: absolute;
+  right: 56px;
+  z-index: 20;
+  padding: 18px;
+}
+
+button:hover {
+  background: #33333389;
+}
+
+.carousel-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  /* padding: 0px 87px; */
+  width: 100%;
+  position: relative;
+  margin-top: 18px;
+}
+
+.carousel-third {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  /* padding: 0px 87px; */
+  width: 100%;
+  position: relative;
+  margin-top: 18px;
+}
+
+.popular-games h3 {
+  margin-left: 72px;
+  padding-top: 47px;
+  padding-bottom: 13px;
+}
+
+.swiper-items-two {
+  display: flex;
+}
+
+.swiper-items-third {
+  display: flex;
+}
+
+.card-popular {
+  width: 207px;
+  height: 276px;
+  width: auto;
+  border-radius: 13px;
+  flex: 0 0 auto;
+  background: #333;
+  overflow: hidden;
+  opacity: 1;
+  border: 2px solid transparent;
+  transition: opacity 0.3s ease-in-out;
+}
+
+button.prev-button-one {
+  position: absolute;
+  display: flex;
+  padding-left: 70px;
+  top: 730px;
+}
+
+button.next-button-one {
+  position: absolute;
+  padding-left: 1140px;
+  top: 730px;
+}
+
+.reviews {
+  margin: 100px 488px 307px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.reviews-container {
+  width: 702px;
+  height: 581px;
+}
+
+.reviews-list {
+  width: 702px;
+  height: 544px;
+  gap: 33px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.reviews-item {
+  width: 702px;
+  height: 160px;
+  border-radius: 12px;
+  background-color: #3b3b48;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.reviews-item img {
+  padding: 9px;
+}
+
+button.prev-button-two {
+  position: absolute;
+  display: flex;
+  left: 56px;
+  top: 50%;
+  z-index: 20;
+  padding: 18px;
+}
+
+button.next-button-two {
+  position: absolute;
+  padding-left: 1140px;
+  top: 1000px;
+}
+
+.game-title {
+  padding-top: 14px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  color: #c1c1c1;
+  width: 420px;
+}
+
+.rating {
+  color: #00c965de;
+}
+
+hr {
+  width: 0px;
+  height: 15px;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.add-fav-button {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.add-fav-button p {
+  position: absolute;
+  top: 130px;
+  left: 125px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+}
+
+a.review-card__like-button {
+  display: flex;
+  flex-direction: row;
+  /* gap: 0.5rem; */
+  align-items: center;
+  color: #c1c1c1;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+img.review-card__like-icon {
+  width: 20px;
+  height: 18px;
+  transition: transform 0.2s;
+}
+
+img.review-card__like-icon:hover {
+  transform: scale(1.1);
+}
+
+span.review-card__like-count {
+  color: #c1c1c1;
+  user-select: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+}
