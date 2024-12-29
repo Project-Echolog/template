@@ -41,7 +41,7 @@
       }
       ?>
     </nav>
-    <a class="header__login" href="#">Login</a>
+    <a class="header__login" href="/echolog-template/pages/login">Login</a>
   </header>
 
   <main>

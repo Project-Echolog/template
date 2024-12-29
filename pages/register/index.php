@@ -14,7 +14,7 @@ ob_start();
     <button type="submit" onclick="this.form.classList.add('redirecting')">Continue</button>
     <p class="success-message">Sign Up Succeeded</p>
     <hr class="divider">
-    <a href="/echolog-template/pages/login_page/index.html">Have an account? Login</a>
+    <a href="/echolog-template/pages/login">Have an account? Login</a>
   </form>
 </div>
 <?php

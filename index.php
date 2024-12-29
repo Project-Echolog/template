@@ -21,7 +21,7 @@ ob_start();
   </div>
   <div class="carousel__front-text">
     <h1 class="carousel__title">Track your games, share your thoughts, build your collection</h1>
-    <a class="carousel__cta" href="#">Get Started - It's lit</a>
+    <a class="carousel__cta" href="/echolog-template/pages/register">Get Started - It's lit</a>
   </div>
 </section>
 <div class="container">
@@ -120,6 +120,7 @@ ob_start();
   <p class="fs-3 text-center">...aaaand so much more</p>
   <?php
   $text = 'Sign Up';
+  $href = '/echolog-template/pages/register';
   $class = 'px-3 text-center';
   include './ui/button/index.php';
   ?>
