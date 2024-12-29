@@ -1,0 +1,241 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+hr {
+  margin: 0px;
+}
+
+.custom-hr {
+  width: 1047px;
+  border: 1px solid #8c8a8a;
+}
+
+.new-list {
+  margin: 93px 183px 398px 59px;
+  width: 1047px;
+}
+
+.new-list h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.28px;
+  margin: 0;
+}
+
+.new-list ::placeholder {
+  font-family: 'SF Pro Display', sans-serif;
+  color: #819291;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.87px;
+}
+
+.list-name-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.list-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.83px;
+}
+
+.list-name input {
+  width: 449px;
+  height: 52px;
+  padding-left: 9px;
+  font-size: 1.5rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.83px;
+}
+
+.description textarea {
+  resize: none;
+  width: 471px;
+  height: 313px;
+  padding-top: 14px;
+  padding-left: 9px;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  border-radius: 3px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.buttons button {
+  width: 107px;
+  height: 43px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #60606c;
+  color: #ffffff;
+  border: 1px solid #60606c;
+}
+
+.save-button {
+  background-color: #009048;
+  color: #ffffff;
+  border: 1px solid #009048;
+}
+
+.game-name-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 104px;
+  justify-content: space-between;
+}
+
+.add-game-list {
+  border: 3px solid #66788a;
+  width: 100%;
+  height: 363px;
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  line-height: 29.83px;
+  gap: 15px;
+  position: relative;
+}
+
+.add-game-list-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.game-list {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  padding-left: 20px;
+}
+
+.list-empty-text {
+  margin: 0;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.add-games-text {
+  margin: 0;
+  font-weight: 300;
+  visibility: hidden;
+}
+
+.game {
+  list-style-type: none;
+  width: 109px;
+  height: 156.11px;
+  border-radius: 13px;
+  border: 0.35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.game img {
+  width: 103px;
+  max-height: 156.11px;
+  overflow: hidden;
+}
+
+.trash-button {
+  background-color: #14181c;
+  border: 0px;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.short-title {
+  width: 450px;
+  height: 24px;
+  color: #819291;
+}
+
+.search-input {
+  width: 449px;
+  height: 52px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #819291;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 168px;
+  overflow: auto;
+  display: none;
+  background-color: #2e4352;
+  z-index: 10;
+  position: absolute;
+  width: 449px;
+  top: auto;
+}
+
+.dropdown li {
+  width: 449px;
+  height: 52px;
+  padding-left: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown hr {
+  margin-left: 12px;
+  width: 434px;
+  color: #8c8a8a;
+}
+
+.dropdown li:hover {
+  color: #00c965;
+}
+
+.dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+.first-child {
+  background-color: #fdffff;
+  color: #819291;
+  border: none;
+}

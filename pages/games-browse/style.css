@@ -1,0 +1,159 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 29.83px;
+}
+
+h3,
+h1 {
+  margin: 0;
+}
+
+.browse-title {
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 78.76px;
+  margin-left: 18px;
+  margin-top: 57px;
+}
+
+.search-bar {
+  margin-top: 50px;
+  margin-left: 760px;
+  margin-bottom: 33px;
+}
+
+.search-bar > input {
+  width: 360px;
+  height: 52px;
+  border-radius: 3px;
+  background-color: #555555;
+  font-size: 20px;
+  line-height: 23.87px;
+  border: 3px solid #555555;
+}
+
+.search-bar ::placeholder {
+  color: #d9d9d9;
+}
+
+.filters h3 {
+  margin-top: 77px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 31.03px;
+}
+
+.filters {
+  padding-left: 11px;
+  border-radius: 8px;
+  color: #fff;
+  width: 291px;
+}
+
+/* Liste stili */
+.filter-list {
+  background-color: #141218;
+  list-style: none;
+  padding: 8px 28px 8px 18px;
+  margin: 0;
+}
+
+.filter-list li {
+  margin-bottom: 24px;
+}
+
+.filter-list label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filter-list input[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #000;
+  appearance: none;
+  position: relative;
+}
+
+.filter-list input[type='checkbox']:checked::before {
+  content: '✔';
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  left: 4px;
+}
+
+.coursel-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+  margin-top: 18px;
+  gap: 33px;
+}
+
+.carousel-two-items {
+  display: flex;
+  margin-left: 190px;
+  margin-bottom: 33px;
+  gap: 17px;
+  transition: transform 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+.card-popular {
+  width: 141.78px;
+  height: 189.05px;
+  border-radius: 13px;
+  border: 0.35px;
+  flex: 0 0 auto;
+  background: #333;
+  overflow: hidden;
+}
+
+.card-popular:hover {
+  border: 2px solid #00c965;
+}
+
+.card-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.browse-games {
+  display: flex;
+  flex-direction: row;
+}
+
+.all-game-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-button {
+  width: 152px;
+  height: 41px;
+  border-radius: 3px;
+  border: 1px solid #66788a;
+  background-color: #66788a;
+  color: #ffffff;
+  margin-left: 975px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25.06px;
+}

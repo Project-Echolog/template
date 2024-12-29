@@ -1,6 +1,39 @@
+/*! COLOR */
+.white {
+  color: #fff !important;
+}
+
+.white-bg {
+  background-color: #fff !important;
+}
+
+.gray {
+  color: #909090 !important;
+}
+
+.gray-bg {
+  background-color: #909090 !important;
+}
+
+.review-lighter {
+  color: var(--color-review-lighter) !important;
+}
+
+.review-lighter-bg {
+  background-color: var(--color-review-lighter) !important;
+}
+
 /*! FONT SIZE */
 .fs-1 {
   font-size: 1rem !important;
+}
+
+.fs-1-2 {
+  font-size: 1.2rem !important;
+}
+
+.fs-1-5 {
+  font-size: 1.5rem !important;
 }
 
 .fs-2 {
@@ -209,7 +242,64 @@
   padding: 3rem !important;
 }
 
+/*! FLEXBOX */
+.flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.align-start {
+  align-items: flex-start !important;
+}
+
+.align-end {
+  align-items: flex-end !important;
+}
+
 /*! MISCELLANEOUS */
 .text-center {
   text-align: center !important;
+}
+
+.border-radius-0-5 {
+  border-radius: 0.5rem !important;
+}
+
+.border-radius-1 {
+  border-radius: 1rem !important;
+}
+
+.border-radius-2 {
+  border-radius: 2rem !important;
+}
+
+.border-radius-3 {
+  border-radius: 3rem !important;
 }
