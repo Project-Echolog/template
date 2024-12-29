@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'Create List';
-$additionalCSS = ['/echolog-template/pages/list-create/style.css'];
-$additionalJS = ['/echolog-template/pages/list-create/script.js'];
+$additionalCSS = ['/echolog-template/pages/collection-create/style.css'];
+$additionalJS = ['/echolog-template/pages/collection-create/script.js'];
 define('ROOTPATH', __DIR__);
 
 ob_start();

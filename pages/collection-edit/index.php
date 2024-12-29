@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'Edit List';
-$additionalCSS = ['/echolog-template/pages/list-edit/style.css'];
-$additionalJS = ['/echolog-template/pages/list-edit/script.js'];
+$additionalCSS = ['/echolog-template/pages/collection-edit/style.css'];
+$additionalJS = ['/echolog-template/pages/collection-edit/script.js'];
 define('ROOTPATH', __DIR__);
 
 ob_start();
