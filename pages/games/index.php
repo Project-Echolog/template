@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <meta name="description" content="Track your games, share your thoughts, build your collection">
+  <link rel="stylesheet" href="/echolog-template/layout/modern-normalise.css">
+  <link rel="stylesheet" href="/echolog-template/layout/base.css">
+  <link rel="stylesheet" href="/echolog-template/layout/utils.css">
+  <link rel="stylesheet" href="/echolog-template/layout/style.css">
+  <link rel="stylesheet" href="/echolog-template/pages/games/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" href="/echolog-template/">
+      <img src="/echolog-template/assets/svgs/logo.svg" alt="My Website Logo" />
+    </a>
+    <nav class="header__nav">
+      <?php
+      $pageTitle = $pageTitle ?? 'Games';
+      $menuItems = [
+        'Games' => 'games.php',
+        'Collections' => 'collections.php',
+        'Profile' => 'profile.php',
+      ];
+
+      foreach ($menuItems as $title => $link) {
+        $activeClass = ($pageTitle === $title) ? 'active' : '';
+        echo "<a class='header__nav-link $activeClass' href='$link'>$title</a>";
+      }
+      ?>
+    </nav>
+    <a class="header__login" href="#">Login</a>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" placeholder="Search Game" class="search-input" />
+    </section>
+
+    <section class="must-have-games">
+      <h3>Must Have Games</h3>
+      <div class="carousel">
+        <button class="prev-button" id="prev-button-carousel">
+          <img src="./chevron-left.svg" alt="Previous Button" width="16" />
+        </button>
+        <button class="next-button" id="next-button-carousel">
+          <img src="./chevron-right.svg" alt="Next Button" width="16" />
+        </button>
+        <div class="carousel-items">
+          <div class="card swiper-slide">
+            <img src="./images/god-of-war.png" alt="God of War" />
+          </div>
+          <div class="card swiper-slide">
+            <img
+              src="./images/fallout-new-vegas.png"
+              alt="Fallout New Vegas" />
+          </div>
+          <div class="card swiper-slide">
+            <img
+              src="./images/red-dead-redemption.png"
+              alt="Red Dead Redemption" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/death-stranding.png" alt="Death Stranding" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-games">
+      <h3>Popular Games</h3>
+      <div class="carousel-two swiper-slide-container-two">
+        <button class="prev-button" id="prev-button-carousel-a">
+          <img src="./chevron-left.svg" alt="Previous Button" width="16" />
+        </button>
+        <button class="next-button" id="next-button-carousel-a">
+          <img src="./chevron-right.svg" alt="Next Button" width="16" />
+        </button>
+        <div class="carousel-items swiper-items-two">
+          <div class="card swiper-slide">
+            <img src="./images/detroit.png" alt="Detroit" />
+          </div>
+          <div class="card swiper-slide">
+            <img
+              src="./images/metal-gear-solid-two.png"
+              alt="Metal Gear Solid Two" />
+          </div>
+          <div class="card swiper-slide">
+            <img
+              src="./images//metal-gear-solid-three.png"
+              alt="Metal Gaer Solid Three" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-games">
+      <h3>New Releases</h3>
+      <div class="carousel-third swiper-slide-container-third">
+        <button class="prev-button" id="prev-button-carousel-b">
+          <img src="./chevron-left.svg" alt="Previous Button" width="16" />
+        </button>
+        <button class="next-button" id="next-button-carousel-b">
+          <img src="./chevron-right.svg" alt="Next Button" width="16" />
+        </button>
+        <div class="carousel-items swiper-items-third">
+          <div class="card swiper-slide">
+            <img src="./images/detroit.png" alt="Detroit" />
+          </div>
+          <div class="card swiper-slide">
+            <img
+              src="./images/metal-gear-solid-two.png"
+              alt="Metal Gear Solid Two" />
+          </div>
+          <div class="card swiper-slide">
+            <img
+              src="./images//metal-gear-solid-three.png"
+              alt="Metal Gaer Solid Three" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+          </div>
+          <div class="card swiper-slide">
+            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews-container">
+        <h3>Most Popular Reviews</h3>
+        <ul class="reviews-list">
+          <li class="reviews-item">
+            <img src="./images/death-stranding-review.png" alt="" />
+            <div class="game-title">
+              <h3>Death Stranding</h3>
+              <div class="rating-container">
+                <p>Deacon</p>
+                <hr />
+                <p class="rating">Rating: 4/5</p>
+              </div>
+              <p class="comment">“KODJIMA IS GENIUS”</p>
+            </div>
+            <div class="add-fav-button">
+              <a href="#" class="review-card__like-button">
+                <img
+                  class="review-card__like-icon"
+                  src="./heart-outline.svg"
+                  alt="Like Icon" />
+                <span class="review-card__like-count">200</span>
+                <!-- PHP'deki like count yerine sabit bir değer -->
+              </a>
+              <!-- <button type="button" class="fav-button">
+                                <svg class="fav-svg" width="20" height="19">
+                                    <use href="./icon.svg#favorite"></use>
+                                </svg>
+                                <img class="fav-svg" src="./heart-outline.svg" alt="Like Icon" />
+                            </button> -->
+              <!-- <p>1.5k</p> -->
+            </div>
+          </li>
+          <li class="reviews-item">
+            <img src="./images/god-of-war-three.png" alt="" />
+            <div class="game-title">
+              <h3>God of War 3</h3>
+              <div class="rating-container">
+                <p>Deacon</p>
+                <hr />
+                <p class="rating">Rating: 4/5</p>
+              </div>
+              <p class="comment">
+                The man, the legend and the myth himself... KRATOSSS
+              </p>
+            </div>
+            <div class="add-fav-button">
+              <a href="#" class="review-card__like-button">
+                <img
+                  class="review-card__like-icon"
+                  src="./heart-outline.svg"
+                  alt="Like Icon" />
+                <span class="review-card__like-count">200</span>
+                <!-- PHP'deki like count yerine sabit bir değer -->
+              </a>
+              <!-- <button type="button" class="fav-button">
+                                                        <svg class="fav-svg" width="20" height="19">
+                                                            <use href="./icon.svg#favorite"></use>
+                                                        </svg>
+                                                        <img class="fav-svg" src="./heart-outline.svg" alt="Like Icon" />
+                                                    </button> -->
+              <!-- <p>1.5k</p> -->
+            </div>
+          </li>
+          <li class="reviews-item">
+            <img src="./images/wolf-among-us-two.png" alt="" />
+            <div class="game-title">
+              <h3>Death Stranding</h3>
+              <div class="rating-container">
+                <p>Deacon</p>
+                <hr />
+                <p class="rating">Rating: 4.9/5</p>
+              </div>
+              <p class="comment">
+                Wake up baby, my new personality just dropped
+              </p>
+            </div>
+            <div class="add-fav-button">
+              <a href="#" class="review-card__like-button">
+                <img
+                  class="review-card__like-icon"
+                  src="./heart-outline.svg"
+                  alt="Like Icon" />
+                <span class="review-card__like-count">200</span>
+                <!-- PHP'deki like count yerine sabit bir değer -->
+              </a>
+              <!-- <button type="button" class="fav-button">
+                                                        <svg class="fav-svg" width="20" height="19">
+                                                            <use href="./icon.svg#favorite"></use>
+                                                        </svg>
+                                                        <img class="fav-svg" src="./heart-outline.svg" alt="Like Icon" />
+                                                    </button> -->
+              <!-- <p>1.5k</p> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="reviews-container">
+        <h3>New Reviews</h3>
+        <ul class="reviews-list">
+          <li class="reviews-item">
+            <img src="./images/death-stranding-review.png" alt="" />
+            <div class="game-title">
+              <h3>Death Stranding</h3>
+              <div class="rating-container">
+                <p>F3nt_Floyd</p>
+                <hr />
+                <p class="rating">Rating: 4/5</p>
+              </div>
+              <p class="comment">
+                Game is so legendary that, i couldnt breath
+              </p>
+            </div>
+            <div class="add-fav-button">
+              <a href="#" class="review-card__like-button">
+                <img
+                  class="review-card__like-icon"
+                  src="./heart-outline.svg"
+                  alt="Like Icon" />
+                <span class="review-card__like-count">200</span>
+                <!-- PHP'deki like count yerine sabit bir değer -->
+              </a>
+              <!-- <button type="button" class="fav-button">
+                                                        <svg class="fav-svg" width="20" height="19">
+                                                            <use href="./icon.svg#favorite"></use>
+                                                        </svg>
+                                                        <img class="fav-svg" src="./heart-outline.svg" alt="Like Icon" />
+                                                    </button> -->
+              <!-- <p>1.5k</p> -->
+            </div>
+          </li>
+          <li class="reviews-item">
+            <img src="./images/god-of-war-three.png" alt="" />
+            <div class="game-title">
+              <h3>God of War 3</h3>
+              <div class="rating-container">
+                <p>Deacon</p>
+                <hr />
+                <p class="rating">Rating: 4/5</p>
+              </div>
+              <p class="comment">
+                Game is so legendary that, i couldnt breath
+              </p>
+            </div>
+            <div class="add-fav-button">
+              <a href="#" class="review-card__like-button">
+                <img
+                  class="review-card__like-icon"
+                  src="./heart-outline.svg"
+                  alt="Like Icon" />
+                <span class="review-card__like-count">200</span>
+                <!-- PHP'deki like count yerine sabit bir değer -->
+              </a>
+              <!-- <button type="button" class="fav-button">
+                                                        <svg class="fav-svg" width="20" height="19">
+                                                            <use href="./icon.svg#favorite"></use>
+                                                        </svg>
+                                                        <img class="fav-svg" src="./heart-outline.svg" alt="Like Icon" />
+                                                    </button> -->
+              <!-- <p>1.5k</p> -->
+            </div>
+          </li>
+          <li class="reviews-item">
+            <img src="./images/wolf-among-us-two.png" alt="" />
+            <div class="game-title">
+              <h3>Death Stranding</h3>
+              <div class="rating-container">
+                <p>Deacon</p>
+                <hr />
+                <p class="rating">Rating: 4.9/5</p>
+              </div>
+              <p class="comment">
+                Wake up baby, my new personality just dropped
+              </p>
+            </div>
+            <div class="add-fav-button">
+              <a href="#" class="review-card__like-button">
+                <img
+                  class="review-card__like-icon"
+                  src="./heart-outline.svg"
+                  alt="Like Icon" />
+                <span class="review-card__like-count">200</span>
+                <!-- PHP'deki like count yerine sabit bir değer -->
+              </a>
+              <!-- <button type="button" class="fav-button">
+                                                        <svg class="fav-svg" width="20" height="19">
+                                                            <use href="./icon.svg#favorite"></use>
+                                                        </svg>
+                                                        <img class="fav-svg" src="./heart-outline.svg" alt="Like Icon" />
+                                                    </button> -->
+              <!-- <p>1.5k</p> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="pt-1"></div>
+  </main>
+
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+    const swiper = new Swiper('.carousel', {
+      speed: 400,
+      direction: 'horizontal',
+      spaceBetween: 15,
+      loop: true,
+      slidesOffsetAfter: 87,
+      slidesOffsetBefore: 87,
+      wrapperClass: 'carousel-items',
+      spaceBetween: 10,
+
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        720: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 6,
+        },
+      },
+    });
+
+    const prevBtn = document.getElementById('prev-button-carousel');
+    const nextBtn = document.getElementById('next-button-carousel');
+
+    prevBtn.addEventListener('click', () => swiper.slidePrev());
+    nextBtn.addEventListener('click', () => swiper.slideNext());
+
+    const swiper_a = new Swiper('.swiper-slide-container-two', {
+      speed: 400,
+      direction: 'horizontal',
+      spaceBetween: 15,
+      loop: true,
+      slidesOffsetAfter: 87,
+      slidesOffsetBefore: 87,
+      wrapperClass: 'swiper-items-two',
+      spaceBetween: 10,
+
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        720: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 6,
+        },
+      },
+    });
+
+    const prevBtn_a = document.getElementById('prev-button-carousel-a');
+    const nextBtn_a = document.getElementById('next-button-carousel-a');
+
+    prevBtn_a.addEventListener('click', () => swiper_a.slidePrev());
+    nextBtn_a.addEventListener('click', () => swiper_a.slideNext());
+
+    const swiper_b = new Swiper('.swiper-slide-container-third', {
+      speed: 400,
+      direction: 'horizontal',
+      spaceBetween: 15,
+      loop: true,
+      slidesOffsetAfter: 87,
+      slidesOffsetBefore: 87,
+      wrapperClass: 'swiper-items-third',
+      spaceBetween: 10,
+
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        720: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 6,
+        },
+      },
+    });
+
+    const prevBtn_b = document.getElementById('prev-button-carousel-b');
+    const nextBtn_b = document.getElementById('next-button-carousel-b');
+
+    prevBtn_b.addEventListener('click', () => swiper_b.slidePrev());
+    nextBtn_b.addEventListener('click', () => swiper_b.slideNext());
+  </script>
+
+  <script>
+    document
+      .querySelectorAll('.review-card__like-button')
+      .forEach((likeButton, index) => {
+        likeButton.addEventListener('click', (event) => {
+          event.preventDefault();
+          const likeCounts = document.querySelectorAll(
+            '.review-card__like-count',
+          );
+          const likeIcon = likeButton.children[0];
+          const likeCount = parseInt(likeCounts[index].textContent);
+          if (likeIcon.classList.contains('liked')) {
+            likeIcon.classList.remove('liked');
+            likeIcon.src = './heart-outline.svg';
+            likeCounts[index].textContent = likeCount - 1;
+            return;
+          }
+          likeIcon.classList.add('liked');
+          likeIcon.src = './heart-fill.svg';
+          likeCounts[index].textContent = likeCount + 1;
+        });
+      });
+  </script>
+
+  <!-- <footer class="footer mt-5">
+    <p class="footer__text">&copy; 2024 Echolog. All rights reserved.</p>
+  </footer> -->
+</body>
+
+</html>
