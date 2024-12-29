@@ -52,41 +52,41 @@
         </button>
         <div class="carousel-items">
           <div class="card swiper-slide">
-            <img src="./images/god-of-war.png" alt="God of War" />
+            <img src="../../assets/images/god-of-war.png" alt="God of War" />
           </div>
           <div class="card swiper-slide">
             <img
-              src="./images/fallout-new-vegas.png"
+              src="../../assets/images/fallout-new-vegas.png"
               alt="Fallout New Vegas" />
           </div>
           <div class="card swiper-slide">
             <img
-              src="./images/red-dead-redemption.png"
+              src="../../assets/images/red-dead-redemption.png"
               alt="Red Dead Redemption" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/death-stranding.png" alt="Death Stranding" />
+            <img src="../../assets/images/death-stranding.png" alt="Death Stranding" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/silent-hill.png" alt="Silent Hill 2" />
+            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
           </div>
         </div>
       </div>
@@ -102,53 +102,53 @@
         </button>
         <div class="carousel-items swiper-items-two">
           <div class="card swiper-slide">
-            <img src="./images/detroit.png" alt="Detroit" />
+            <img src="../../assets/images/detroit.png" alt="Detroit" />
           </div>
           <div class="card swiper-slide">
             <img
-              src="./images/metal-gear-solid-two.png"
+              src="../../assets/images/metal-gear-solid-two.png"
               alt="Metal Gear Solid Two" />
           </div>
           <div class="card swiper-slide">
             <img
-              src="./images//metal-gear-solid-three.png"
+              src="../../assets/images//metal-gear-solid-three.png"
               alt="Metal Gaer Solid Three" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
         </div>
       </div>
@@ -165,53 +165,53 @@
         </button>
         <div class="carousel-items swiper-items-third">
           <div class="card swiper-slide">
-            <img src="./images/detroit.png" alt="Detroit" />
+            <img src="../../assets/images/detroit.png" alt="Detroit" />
           </div>
           <div class="card swiper-slide">
             <img
-              src="./images/metal-gear-solid-two.png"
+              src="../../assets/images/metal-gear-solid-two.png"
               alt="Metal Gear Solid Two" />
           </div>
           <div class="card swiper-slide">
             <img
-              src="./images//metal-gear-solid-three.png"
+              src="../../assets/images//metal-gear-solid-three.png"
               alt="Metal Gaer Solid Three" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-last-of-us.png" alt="The Last Of Us" />
+            <img src="../../assets/images/the-last-of-us.png" alt="The Last Of Us" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/the-evil-within.png" alt="The Evil Within" />
+            <img src="../../assets/images/the-evil-within.png" alt="The Evil Within" />
           </div>
           <div class="card swiper-slide">
-            <img src="./images/uncharted-four.png" alt="Uncharted Four" />
+            <img src="../../assets/images/uncharted-four.png" alt="Uncharted Four" />
           </div>
         </div>
       </div>
@@ -222,7 +222,7 @@
         <h3>Most Popular Reviews</h3>
         <ul class="reviews-list">
           <li class="reviews-item">
-            <img src="./images/death-stranding-review.png" alt="" />
+            <img src="../../assets/images/death-stranding-review.png" alt="" />
             <div class="game-title">
               <h3>Death Stranding</h3>
               <div class="rating-container">
@@ -251,7 +251,7 @@
             </div>
           </li>
           <li class="reviews-item">
-            <img src="./images/god-of-war-three.png" alt="" />
+            <img src="../../assets/images/god-of-war-three.png" alt="" />
             <div class="game-title">
               <h3>God of War 3</h3>
               <div class="rating-container">
@@ -282,7 +282,7 @@
             </div>
           </li>
           <li class="reviews-item">
-            <img src="./images/wolf-among-us-two.png" alt="" />
+            <img src="../../assets/images/wolf-among-us-two.png" alt="" />
             <div class="game-title">
               <h3>Death Stranding</h3>
               <div class="rating-container">
@@ -318,7 +318,7 @@
         <h3>New Reviews</h3>
         <ul class="reviews-list">
           <li class="reviews-item">
-            <img src="./images/death-stranding-review.png" alt="" />
+            <img src="../../assets/images/death-stranding-review.png" alt="" />
             <div class="game-title">
               <h3>Death Stranding</h3>
               <div class="rating-container">
@@ -349,7 +349,7 @@
             </div>
           </li>
           <li class="reviews-item">
-            <img src="./images/god-of-war-three.png" alt="" />
+            <img src="../../assets/images/god-of-war-three.png" alt="" />
             <div class="game-title">
               <h3>God of War 3</h3>
               <div class="rating-container">
@@ -380,7 +380,7 @@
             </div>
           </li>
           <li class="reviews-item">
-            <img src="./images/wolf-among-us-two.png" alt="" />
+            <img src="../../assets/images/wolf-among-us-two.png" alt="" />
             <div class="game-title">
               <h3>Death Stranding</h3>
               <div class="rating-container">
