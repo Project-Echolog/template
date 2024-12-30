@@ -3,7 +3,10 @@ if (!isset($additionalCSS)) $additionalCSS = [];
 array_push($additionalCSS, '/echolog-template/ui/collection-card/style.css');
 $_alt_view = $alt_view ?? false;
 ?>
-<a href="#" class="collection-card <?php echo $_alt_view ? 'alt mb-2' : ''; ?>" title="<?php echo $title ?? 'Collection Title'; ?>">
+<a
+  href="<?php echo $href ?? '/echolog-template/pages/collection/'; ?>"
+  class="collection-card <?php echo $_alt_view ? 'alt mb-2' : ''; ?>"
+  title="<?php echo $title ?? 'Collection Title'; ?>">
   <div class="collection-card__image-frame <?php echo $_alt_view ? 'alt' : ''; ?>">
     <div class="collection-card__overlay collection-card__image--1">
       <img
@@ -57,6 +60,7 @@ $_alt_view = $alt_view ?? false;
   <?php endif; ?>
 </a>
 <?php
+$href = null;
 $src = null;
 $title = null;
 $username = null;
