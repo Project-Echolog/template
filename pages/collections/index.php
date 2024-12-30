@@ -12,7 +12,10 @@ ob_start();
     <input type="text" class="search" placeholder="Search in list" id="collection-search" />
   </div>
   <section class="popular-collections" id="popular-collections">
-    <p class="fs-2">Most Rated Collections</p>
+    <div class="flex flex-row justify-between align-center">
+      <p class="fs-2">Popular Collections</p>
+      <a class="white" href="/echolog-template/pages/collections-browse">See all</a>
+    </div>
     <div class="collections">
       <?php
       $title = 'for when you want to feel something';
