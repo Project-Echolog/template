@@ -32,7 +32,7 @@ ob_start();
   <section class="popular-games mt-3">
     <div class="section-header mb-2">
       <p class="fs-2 m-0">Popular Games to Track</p>
-      <a class="fs-1-5" href="#">See all</a>
+      <a class="fs-1-5" href="/echolog-template/pages/games/">See all</a>
     </div>
     <div class="gallery">
       <?php
@@ -73,18 +73,18 @@ ob_start();
       <!-- <a class="fs-1-5" href="#">See all</a> -->
     </div>
     <div class="collections">
-      <button class="create-new-list" id="create-new-list">
+      <a class="create-new-list" id="create-new-list" href="/echolog-template/pages/collection-create/">
         <div class="create-new-list__frame"></div>
         <p class="create-new-list__title fs-2 m-0">
           Create new list
         </p>
-      </button>
+      </a>
     </div>
   </section>
   <section class="wishlist mt-3">
     <div class="section-header mb-2">
       <p class="fs-2 m-0">Wishlist</p>
-      <a class="fs-1-5" href="#">See all</a>
+      <a class="fs-1-5" href="/echolog-template/pages/games/">See all</a>
     </div>
     <div class="gallery">
       <?php
@@ -122,7 +122,6 @@ ob_start();
   <section class="reviews mt-3">
     <div class="section-header mb-2">
       <p class="fs-2 m-0">Reviews</p>
-      <a class="fs-1-5" href="#">See all</a>
     </div>
     <?php
     $game_image = "/echolog-template/assets/images/image-4.png";

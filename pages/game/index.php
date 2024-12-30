@@ -32,7 +32,7 @@ ob_start();
     <div class="introduction__right">
       <h1 class="introduction__title">Days Gone</h1>
       <h2 class="introduction__developer">
-        <a class="white" href="#">Bend Studio</a>
+        <a class="white" href="/echolog-template/pages/games-browse">Bend Studio</a>
       </h2>
       <p class="introduction__description">
         Days Gone is set in a post-apocalyptic open world, two years after a
@@ -61,17 +61,17 @@ ob_start();
   <aside class="genres">
     <h2 class="genres__title">Genres</h2>
     <div class="genres__list">
-      <a class="genres__item" href="#">Action</a>
-      <a class="genres__item" href="#">Adventure</a>
-      <a class="genres__item" href="#">Horror</a>
-      <a class="genres__item" href="#">Open World</a>
-      <a class="genres__item" href="#">Survival</a>
+      <a class="genres__item" href="/echolog-template/pages/games-browse">Action</a>
+      <a class="genres__item" href="/echolog-template/pages/games-browse">Adventure</a>
+      <a class="genres__item" href="/echolog-template/pages/games-browse">Horror</a>
+      <a class="genres__item" href="/echolog-template/pages/games-browse">Open World</a>
+      <a class="genres__item" href="/echolog-template/pages/games-browse">Survival</a>
     </div>
   </aside>
   <hr color="#8a8a8a" />
   <aside class="info-line">
     <p class="info">Rating: <span>4.5</span>/5</p>
-    <p class="info">Developer: <a class="white" href="#"><span>Bend Studio</a></span></p>
+    <p class="info">Developer: <a class="white" href="/echolog-template/pages/games-browse"><span>Bend Studio</a></span></p>
     <p class="info">Release Date: <span>April 26, 2019</span></p>
     <p class="info">Platforms: <span>PS4,PS5,PC</span></p>
   </aside>
@@ -80,6 +80,8 @@ ob_start();
     <h3 class="personal-review__text m-0 fs-3">What do you think?</h3>
     <?php
     $class = 'personal-review__button';
+    $id = 'review-button';
+    $href = '/echolog-template/pages/game-add';
     $text = 'Review it';
     include '../../UI/button/index.php';
     ?>
@@ -88,7 +90,7 @@ ob_start();
   <section class="popular-reviews mt-3">
     <div class="section-header mb-2">
       <p class="fs-2 m-0">Popular Reviews</p>
-      <a class="fs-1-5" href="#">See all</a>
+      <a class="fs-1-5" href="/echolog-template/pages/game-reviews">See all</a>
     </div>
     <?php
     $avatar = "/echolog-template/assets/images/profile-photo.png";

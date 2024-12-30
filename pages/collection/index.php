@@ -9,9 +9,9 @@ ob_start();
 <div class="collection container">
   <h1 class="collection__name">
     Games where main character is "literally me"
-    <span class="collection__edit-button">
+    <a class="collection__edit-button" href="/echolog-template/pages/collection-edit/" id="collection-edit-button">
       <img class="collection__edit-button-icon" src="/echolog-template/assets/svgs/pencil-outline.svg" alt="Edit icon" />
-    </span>
+    </a>
   </h1>
   <h2 class="collection__description gray">
     Main character is literally me fr fr
