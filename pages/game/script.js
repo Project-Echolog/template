@@ -1,6 +1,8 @@
 const buttonGameWishlist = document.getElementById('game-wishlist');
 const buttonGameLike = document.getElementById('game-like');
 const buttonGameAdd = document.getElementById('game-add');
+const reviewButton = document.getElementById('review-button');
+var overlay = document.querySelector('.overlay');
 
 buttonGameWishlist.addEventListener('click', (event) => {
   event.preventDefault();
@@ -45,4 +47,10 @@ buttonGameAdd.addEventListener('click', (event) => {
   }
   icon.classList.add('liked');
   icon.src = '/echolog-template/assets/svgs/check-circle-solid.svg';
+});
+
+reviewButton.addEventListener('click', (event) => {
+  console.log('Review button clicked');
+  event.preventDefault();
+  overlay.style.display = 'block';
 });
