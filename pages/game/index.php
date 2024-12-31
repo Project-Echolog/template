@@ -78,12 +78,16 @@ ob_start();
   <hr color="#8a8a8a" />
   <section class="personal-review">
     <h3 class="personal-review__text m-0 fs-3">What do you think?</h3>
+    <!-- <button class="personal-review__button" id="review-button">Review it</button> -->
     <?php
     $class = 'personal-review__button';
     $id = 'review-button';
     $href = '/echolog-template/pages/game-add';
     $text = 'Review it';
     include '../../UI/button/index.php';
+    ?>
+    <?php
+    include '../../UI/game-add/index.php';
     ?>
   </section>
   <hr color="#8a8a8a" />
