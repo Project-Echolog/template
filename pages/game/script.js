@@ -2,7 +2,10 @@ const buttonGameWishlist = document.getElementById('game-wishlist');
 const buttonGameLike = document.getElementById('game-like');
 const buttonGameAdd = document.getElementById('game-add');
 const reviewButton = document.getElementById('review-button');
-var overlay = document.querySelector('.overlay');
+const popupButtonGameAdd = document.querySelector('.add-btn');
+
+var overlayCollection = document.getElementById('overlay-collection');
+var overlayReview = document.getElementById('overlay-review');
 
 buttonGameWishlist.addEventListener('click', (event) => {
   event.preventDefault();
@@ -36,7 +39,7 @@ buttonGameLike.addEventListener('click', (event) => {
   text.textContent = parseInt(text.textContent) + 1;
 });
 
-buttonGameAdd.addEventListener('click', (event) => {
+popupButtonGameAdd.addEventListener('click', (event) => {
   event.preventDefault();
   console.log('Game added to cart');
   const icon = buttonGameAdd.children[0];
@@ -49,8 +52,14 @@ buttonGameAdd.addEventListener('click', (event) => {
   icon.src = '/echolog-template/assets/svgs/check-circle-solid.svg';
 });
 
+buttonGameAdd.addEventListener('click', (event) => {
+  console.log('Review button clicked');
+  event.preventDefault();
+  overlayCollection.style.display = 'block';
+});
+
 reviewButton.addEventListener('click', (event) => {
   console.log('Review button clicked');
   event.preventDefault();
-  overlay.style.display = 'block';
+  overlayReview.style.display = 'block';
 });
