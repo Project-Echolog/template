@@ -6,6 +6,14 @@ define('ROOTPATH', __DIR__);
 
 ob_start();
 ?>
+<?php
+$id = 'overlay-collection';
+include '../../UI/game-add/index.php';
+?>
+<?php
+$id = 'overlay-review';
+include '../../UI/review-add/index.php';
+?>
 <div class="banner-frame">
   <img src="/echolog-template/assets/images/banner.png" alt="banner" class="banner">
 </div>
@@ -82,12 +90,9 @@ ob_start();
     <?php
     $class = 'personal-review__button';
     $id = 'review-button';
-    $href = '/echolog-template/pages/game-add';
+    $href = '/echolog-template/pages/review-add';
     $text = 'Review it';
     include '../../UI/button/index.php';
-    ?>
-    <?php
-    include '../../UI/game-add/index.php';
     ?>
   </section>
   <hr color="#8a8a8a" />

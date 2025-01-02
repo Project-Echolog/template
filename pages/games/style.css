@@ -58,11 +58,9 @@ hr {
 }
 
 .card {
-  width: 207px;
-  height: 276px;
-  width: auto;
+  width: 120px;
+  aspect-ratio: 2 / 3; /* Genişlik-yükseklik oranı */
   border-radius: 13px;
-  /* flex: 0 0 auto; */
   background: #333;
   overflow: hidden;
   opacity: 1;

@@ -22,14 +22,14 @@
       <?php
       $pageTitle = $pageTitle ?? 'Games';
       $menuItems = [
-        'Games' => 'games.php',
-        'Collections' => 'collections.php',
-        'Profile' => 'profile.php',
+        'Games' => 'games',
+        'Collections' => 'collections',
+        'Profile' => 'profile',
       ];
 
       foreach ($menuItems as $title => $link) {
         $activeClass = ($pageTitle === $title) ? 'active' : '';
-        echo "<a class='header__nav-link $activeClass' href='$link'>$title</a>";
+        echo "<a class='header__nav-link $activeClass' href='/echolog-template/pages/$link'>$title</a>";
       }
       ?>
     </nav>
@@ -37,9 +37,12 @@
   </header>
 
   <main>
-    <section class="search-bar">
-      <input type="text" placeholder="Search Game" class="search-input" />
-    </section>
+    <div class="flex flex-row justify-between align-center">
+      <section class="search-bar">
+        <input type="text" placeholder="Search Game" class="search-input" />
+      </section>
+      <a href="/echolog-template/pages/games-browse" class="px-3 fs-2">See all</a>
+    </div>
 
     <section class="must-have-games">
       <h3>Must Have Games</h3>
@@ -51,43 +54,50 @@
           <img src="./chevron-right.svg" alt="Next Button" width="16" />
         </button>
         <div class="carousel-items">
-          <div class="card swiper-slide">
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
             <img src="../../assets/images/god-of-war.png" alt="God of War" />
-          </div>
-          <div class="card swiper-slide">
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
             <img
               src="../../assets/images/fallout-new-vegas.png"
               alt="Fallout New Vegas" />
-          </div>
-          <div class="card swiper-slide">
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
             <img
               src="../../assets/images/red-dead-redemption.png"
               alt="Red Dead Redemption" />
-          </div>
-          <div class="card swiper-slide">
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
             <img src="../../assets/images/death-stranding.png" alt="Death Stranding" />
-          </div>
-          <div class="card swiper-slide">
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
             <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
-          <div class="card swiper-slide">
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
+            <img src="../../assets/images/image-6.png" alt="Silent Hill 3" />
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
+            <img src="../../assets/images/god-of-war.png" alt="God of War" />
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
+            <img
+              src="../../assets/images/fallout-new-vegas.png"
+              alt="Fallout New Vegas" />
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
+            <img
+              src="../../assets/images/red-dead-redemption.png"
+              alt="Red Dead Redemption" />
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
+            <img src="../../assets/images/death-stranding.png" alt="Death Stranding" />
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
             <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
-          <div class="card swiper-slide">
-            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
-          <div class="card swiper-slide">
-            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
-          <div class="card swiper-slide">
-            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
-          <div class="card swiper-slide">
-            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
-          <div class="card swiper-slide">
-            <img src="../../assets/images/silent-hill.png" alt="Silent Hill 2" />
-          </div>
+          </a>
+          <a href="/echolog-template/pages/game" class="card swiper-slide">
+            <img src="../../assets/images/image-6.png" alt="Silent Hill 3" />
+          </a>
         </div>
       </div>
     </section>
