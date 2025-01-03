@@ -49,7 +49,7 @@
   </main>
 
   <footer class="footer mt-5">
-    <p class="footer__text">&copy; 2024 Echolog. All rights reserved.</p>
+    <p class="footer__text">&copy; 2025 Echolog. All rights reserved.</p>
   </footer>
 
   <?php
